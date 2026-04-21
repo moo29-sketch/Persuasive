@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Totally Fake Hack Screen</title>
+<style>
+    body {
+        margin: 0;
+        background: radial-gradient(circle, #1a0000, #000000);
+        color: #ff3b3b;
+        font-family: "Arial", sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .box {
+        border: 3px dashed #ff3b3b;
+        padding: 40px;
+        border-radius: 15px;
+        background: rgba(0,0,0,0.6);
+        max-width: 600px;
+        animation: shake 0.5s infinite alternate;
+    }
+
+    h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #ffd1d1;
+        line-height: 1.5;
+    }
+
+    .big {
+        font-size: 22px;
+        margin-top: 15px;
+        color: #ffffff;
+    }
+
+    .button {
+        margin-top: 25px;
+        padding: 10px 20px;
+        background: #ff3b3b;
+        border: none;
+        color: white;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background: #ff0000;
+    }
+
+    @keyframes shake {
+        0% { transform: translate(2px, 1px) rotate(0deg); }
+        100% { transform: translate(-2px, -1px) rotate(-1deg); }
+    }
+
+    .tiny {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #888;
+    }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h1>💀 YOU'VE BEEN HACKED 💀</h1>
+
+    <p>
+        Just kidding… probably.<br><br>
+        If this were real, something bad would be happening right now.
+    </p>
+
+    <div class="big">
+        This is a cybersecurity awareness demo screen.
+    </div>
+
+    <button class="button" onclick="alert('Relax 😄 This is only a demo for your presentation.')">
+        Panic Button
+    </button>
+
+    <div class="tiny">
+        (No computers were harmed in the making of this page)
+    </div>
+</div>
+
+</body>
+</html>
